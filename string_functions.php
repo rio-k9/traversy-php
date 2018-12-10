@@ -33,4 +33,9 @@ foreach($values as $value){
     echo "{$value} is a {$type} <br />";
   }
 }
+
+$lorum = "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of.";
+$compress = gzcompress($lorum);
+$uncompress = gzuncompress($compress);
+echo '<br />'.$compress.$uncompress; //String Replace
  ?>
